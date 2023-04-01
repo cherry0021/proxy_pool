@@ -61,13 +61,13 @@ PROXY_FETCHER = [
 # 代理验证目标网站
 HTTP_URL = "http://httpbin.org"
 
-HTTPS_URL = "https://www.qq.com"
+HTTPS_URL = "https://ipinfo.io"
 
 # 代理验证时超时时间
-VERIFY_TIMEOUT = 10
+VERIFY_TIMEOUT = 5
 
 # 近PROXY_CHECK_COUNT次校验中允许的最大失败次数,超过则剔除代理
-MAX_FAIL_COUNT = 0
+MAX_FAIL_COUNT = 1
 
 # 近PROXY_CHECK_COUNT次校验中允许的最大失败率,超过则剔除代理
 # MAX_FAIL_RATE = 0.1
