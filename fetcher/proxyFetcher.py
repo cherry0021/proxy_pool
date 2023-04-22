@@ -194,7 +194,7 @@ class ProxyFetcher(object):
         request = WebRequest()
         for url in urls:
             r = request.get(url, timeout=10)
-            proxies = re.findall(r'/html/body/meta"utf-8"/div[3]/div[1]/div/div[1]/table/tbody/tr[1]/td[1]', r.text)
+            proxies = re.findall(r'/html/body/meta"utf-8"/div[3]/div[1]/div/div[1]/table/tbody', r.text)
             for proxy in proxies:
                 yield ':'.join(proxy)
 
